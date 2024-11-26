@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perkhidmatan Pembinaan Elektrik</title>
+    <style>
+        /* Global Style */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #ff4b5c, #f55f3f);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        header p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 12px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 25px;
+            font-size: 1rem;
+            margin: 0 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: all 0.3s ease-in-out;
+        }
+        nav a:hover {
+            background-color: #ff4b5c;
+            transform: scale(1.1);
+        }
+
+        /* Section Styling */
+        section {
+            padding: 40px 20px;
+            margin: 30px auto;
+            max-width: 1100px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        /* Service List */
+        .service-list ul {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .service-list li {
+            background-color: #ff4b5c;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+        .service-list li:hover {
+            background-color: #f55f3f;
+            transform: translateY(-10px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Why Choose Us */
+        #why-choose-us {
+            background: linear-gradient(45deg, #ff4b5c, #ff9b6a);
+            padding: 40px 20px;
+            color: white;
+            border-radius: 8px;
+        }
+        #why-choose-us ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        #why-choose-us li {
+            background-color: #ffffff;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            flex: 1 1 30%;
+            margin: 15px;
+            font-size: 1.1rem;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+        }
+        #why-choose-us li:hover {
+            background-color: #ff4b5c;
+            color: white;
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Contact Section */
+        .contact-links a {
+            display: inline-block;
+            padding: 18px 24px;
+            margin: 10px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .contact-links a:hover {
+            background-color: #128C7E;
+        }
+
+        .contact-links .email-link {
+            background-color: #007BFF;
+        }
+
+        .contact-links .email-link:hover {
+            background-color: #0056b3;
+        }
+
+        /* Form Styling */
+        form input, form textarea {
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0;
+            font-size: 1rem;
+            border-radius: 8px;
+            border: 2px solid #ccc;
+            transition: border-color 0.3s ease;
+        }
+        form input:focus, form textarea:focus {
+            border-color: #ff4b5c;
+        }
+
+        form button {
+            background-color: #ff4b5c;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        form button:hover {
+            background-color: #f55f3f;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav a {
+                padding: 12px 15px;
+            }
+
+            .service-list ul {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+
+            #why-choose-us ul {
+                flex-direction: column;
+            }
+
+            #why-choose-us li {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Perkhidmatan Pembinaan Elektrik</h1>
+    <p>Solusi Elektrik Profesional untuk Projek Anda</p>
+</header>
+
+<nav>
+    <a href="#about">Tentang Kami</a>
+    <a href="#services">Perkhidmatan</a>
+    <a href="#why-choose-us">Kenapa Pilih Kami</a>
+    <a href="#contact">Hubungi Kami</a>
+</nav>
+
+<section id="about">
+    <h2>Tentang Kami</h2>
+    <p>Dengan pengalaman lebih daripada 10 tahun dalam industri pembinaan elektrik, kami menyediakan perkhidmatan yang berkualiti tinggi untuk projek pembinaan rumah, komersial, dan industri. Syarikat kami komited untuk memastikan setiap projek disiapkan mengikut piawaian keselamatan dan kualiti yang tertinggi.</p>
+</section>
+
+<section id="services">
+    <h2>Perkhidmatan Kami</h2>
+    <div class="service-list">
+        <ul>
+            <li>Pemasangan Sistem Elektrik untuk Bangunan</li>
+            <li>Rekabentuk dan Pengurusan Projek Elektrik</li>
+            <li>Servis Penyelenggaraan dan Pembaikan Sistem Elektrik</li>
+            <li>Pemasangan Sistem Pencahayaan</li>
+            <li>Pemasangan Panel Solar</li>
+            <li>Perkhidmatan Ujian dan Pengesahan Keselamatan Elektrik</li>
+        </ul>
+    </div>
+</section>
+
+<section id="why-choose-us">
+    <h2>Kenapa Pilih Kami?</h2>
+    <ul>
+        <li>Profesionalisme dan pengalaman dalam bidang pembinaan elektrik.</li>
+        <li>Penggunaan peralatan dan teknologi terkini untuk setiap projek.</li>
+        <li>Pematuhan kepada piawaian keselamatan yang ketat.</li>
+        <li>Penyelesaian yang berpatutan dan efisien.</li>
+        <li>Perkhidmatan pelanggan yang mesra dan responsif.</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Hubungi Kami</h2>
+    <p>Jika anda berminat untuk mendapatkan perkhidmatan kami atau mempunyai sebarang pertanyaan, sila hubungi kami melalui borang di bawah atau klik pada pautan WhatsApp atau emel kami:</p>
+
+    <div class="contact-links">
+        <a href="https://wa.me/60123456789" target="_blank">
+            <i class="fa fa-whatsapp"></i> Hubungi kami melalui WhatsApp
+        </a>
+        <a href="mailto:info@syarikatanda.com" class="email-link">
+            <i class="fa fa-envelope"></i> Hubungi kami melalui Email
+        </a>
+    </div>
+
+    <p>Atau anda juga boleh mengisi borang di bawah:</p>
+    
+    <form action="submit_form.php" method="POST">
+        <input type="text" name="name" placeholder="Nama Anda" required>
+        <input type="email" name="email" placeholder="Emel Anda" required>
+        <textarea name="message" placeholder="Tulis Pesanan Anda" rows="4" required></textarea>
+        <button type="submit">Hantar</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Perkhidmatan Pembinaan Elektrik. Semua Hak Dilindungi.</p>
+</footer>
+
+</body>
+</html>
